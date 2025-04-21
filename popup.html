@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ReadSnap </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReadSnap</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      min-width: 300px;
+      max-width: 500px;
+      height: 100%;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 700;
+      text-align: center;
+      background: linear-gradient(90deg, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 13px;
+      color: #cbd5e1;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    label {
+      font-size: 14px;
+      align-self: flex-start;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      background-color: #1e293b;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    .button-row {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      width: 100%;
+    }
+
+    button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    #summarize {
+      background-color: #9333ea;
+      color: white;
+    }
+
+    #summarize:hover {
+      background-color: #7e22ce;
+    }
+
+    #copy-btn {
+      background-color: #334155;
+      color: white;
+    }
+
+    #copy-btn:hover {
+      background-color: #1e293b;
+    }
+
+    #result {
+      width: 100%;
+      padding: 15px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      min-height: 120px;
+      max-height: 200px;
+      overflow-y: auto;
+      font-size: 13px;
+      color: #e2e8f0;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: auto;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 350px) {
+      body {
+        padding: 15px;
+      }
+
+      .button-row {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-    Hii, this is the popup page for the extension.
+  <h1>ReadSnap</h1>
+  <p>Your instant AI-powered article summarizer</p>
+
+  <label for="summary-type">Choose a summary type:</label>
+  <select id="summary-type"> 
+    <option value="summary">Quick Summary</option>
+    <option value="detailed">Detailed Summary</option>
+    <option value="bullet">Bullet Points</option>
+  </select>
+
+  <div class="button-row">
+    <button id="summarize">✨ Summarize</button>
+    <button id="copy-btn">📋 Copy</button>
+  </div>
+
+  <pre id="result">Select a type and click Summarize...</pre>
+
+  <footer>Made with 💡 by Ayush Singh</footer>
+
+  <script src="popup.js"></script>
 </body>
 </html>
