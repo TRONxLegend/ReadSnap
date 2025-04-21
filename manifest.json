@@ -2,41 +2,33 @@
     "name": "ReadSnap",
     "version": "1.0",
     "manifest_version": 3,
+    "description": "Summarize any blog or article on the web instantly using AI.",
     "permissions": [
-        "activeTab",
-        "scripting",
-        "storage"
+      "activeTab",
+      "scripting",
+      "storage"
     ],
     "action": {
-        "default_popup": "popup.html",
-        "default_icon": "icon.jpg",
-        "default_title": "ReadSnap"
+      "default_popup": "popup.html",
+      "default_icon": "icon.jpg",
+      "default_title": "Summarize this page with ReadSnap"
+    },
+    "background": {
+      "service_worker": "background.js"
     },
     "content_scripts": [
-        {
-            "matches": [
-                "<all_urls>"
-            ],
-            "js": [
-                "content.js"
-            ]
-        }
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
     ],
-    "background": {
-        "service_worker": "background.js"
-    },
+    "host_permissions": ["<all_urls>"],
     "options_page": "options.html",
-    "host_permissions": [
-        "<all_urls>"
-    ],
     "web_accessible_resources": [
-        {
-            "resources": [
-                "content.js"
-            ],
-            "matches": [
-                "<all_urls>"
-            ]
-        }
+      {
+        "resources": ["styles.css", "scripts/injected.js"],
+        "matches": ["<all_urls>"]
+      }
     ]
-}
+  }
+  
