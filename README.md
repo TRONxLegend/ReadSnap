@@ -37,8 +37,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/article-summarizer-extension.git
-   cd article-summarizer-extension
+   git clone 
 
 
 ---
@@ -82,7 +81,6 @@ Submit a pull request!
 - If you have a demo video/GIF, place it in `assets` and link it.
 - Optional: Customize your name and license link at the bottom.
 
-Would you like me to also design a matching logo or icon set for your extension?
 ---
 
 💡 Made with ❤️ to save you time — one summary at a time.
