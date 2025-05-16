@@ -54,11 +54,15 @@
 
 🗝️ chrome.storage.sync for secure local key storage
 
+---
 🔐 Privacy & Security
+---
 This extension does not collect or share any personal data.
 Your API key is stored securely in Chrome using chrome.storage.sync.
 
+---
 🙌 Contributing
+---
 Have ideas for improvements or bug fixes? We’d love your help!
 
 Fork the repo
@@ -68,3 +72,17 @@ Create a feature branch
 Submit a pull request!
 
 📬 For major changes, please open an issue first to discuss what you’d like to change.
+
+
+---
+
+✅ **Next Steps for You**:
+- Replace `your-username` with your GitHub handle.
+- Add actual `popup.png` and `summary.png` to an `assets` folder.
+- If you have a demo video/GIF, place it in `assets` and link it.
+- Optional: Customize your name and license link at the bottom.
+
+Would you like me to also design a matching logo or icon set for your extension?
+---
+
+💡 Made with ❤️ to save you time — one summary at a time.
