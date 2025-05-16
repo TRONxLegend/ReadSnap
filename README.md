@@ -40,10 +40,12 @@
    git clone https://github.com/your-username/article-summarizer-extension.git
    cd article-summarizer-extension
 
-   
 
+---
 
-##📦 Tech Stack 
+📦 Tech Stack Used :-
+---
+
 🧠 Gemini AI API
 
 ⚙️ Chrome Extension (Manifest V3)
