@@ -39,3 +39,30 @@
    ```bash
    git clone https://github.com/your-username/article-summarizer-extension.git
    cd article-summarizer-extension
+
+   📦 Tech Stack
+
+
+   
+🧠 Gemini AI API
+
+⚙️ Chrome Extension (Manifest V3)
+
+💻 JavaScript, HTML, CSS
+
+🗝️ chrome.storage.sync for secure local key storage
+
+🔐 Privacy & Security
+This extension does not collect or share any personal data.
+Your API key is stored securely in Chrome using chrome.storage.sync.
+
+🙌 Contributing
+Have ideas for improvements or bug fixes? We’d love your help!
+
+Fork the repo
+
+Create a feature branch
+
+Submit a pull request!
+
+📬 For major changes, please open an issue first to discuss what you’d like to change.
