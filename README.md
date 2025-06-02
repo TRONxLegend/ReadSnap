@@ -83,4 +83,4 @@ Submit a pull request!
 
 ---
 
-💡 Made with ❤️ to save you time — one summary at a time.
+💡 Made with ❤️ to save you time — one summary at a time...
